@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/dev-engine/serializers/webhook-request-log';
+export { default } from '@atomizedev/dev-engine/serializers/webhook-request-log';

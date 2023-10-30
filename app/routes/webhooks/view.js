@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/dev-engine/routes/webhooks/view';
+export { default } from '@atomizedev/dev-engine/routes/webhooks/view';

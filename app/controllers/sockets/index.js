@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/dev-engine/controllers/sockets/index';
+export { default } from '@atomizedev/dev-engine/controllers/sockets/index';

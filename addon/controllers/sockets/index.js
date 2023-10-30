@@ -2,7 +2,7 @@ import Controller from '@ember/controller';
 import { tracked } from '@glimmer/tracking';
 import { inject as service } from '@ember/service';
 import { action, computed } from '@ember/object';
-import fromStore from '@fleetbase/ember-core/decorators/from-store';
+import fromStore from '@atomizedev/ember-core/decorators/from-store';
 
 export default class SocketsIndexController extends Controller {
     /**

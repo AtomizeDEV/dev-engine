@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/dev-engine/components/webhook/details';
+export { default } from '@atomizedev/dev-engine/components/webhook/details';

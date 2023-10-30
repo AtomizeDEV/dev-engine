@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/dev-engine/routes/events/index';
+export { default } from '@atomizedev/dev-engine/routes/events/index';

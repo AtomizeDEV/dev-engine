@@ -1,9 +1,9 @@
 import Controller, { inject as controller } from '@ember/controller';
 import { inject as service } from '@ember/service';
 import { action, computed } from '@ember/object';
-import groupApiEvents from '@fleetbase/ember-core/utils/group-api-events';
-import fromStore from '@fleetbase/ember-core/decorators/from-store';
-import fetchFrom from '@fleetbase/ember-core/decorators/fetch-from';
+import groupApiEvents from '@atomizedev/ember-core/utils/group-api-events';
+import fromStore from '@atomizedev/ember-core/decorators/from-store';
+import fetchFrom from '@atomizedev/ember-core/decorators/fetch-from';
 
 export default class WebhooksViewController extends Controller {
     /**

@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/dev-engine/components/api-event/details';
+export { default } from '@atomizedev/dev-engine/components/api-event/details';

@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/dev-engine/templates/events/view';
+export { default } from '@atomizedev/dev-engine/templates/events/view';

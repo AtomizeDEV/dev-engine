@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/dev-engine/components/widget/api-metrics';
+export { default } from '@atomizedev/dev-engine/components/widget/api-metrics';

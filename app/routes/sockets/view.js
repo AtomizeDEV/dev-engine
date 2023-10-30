@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/dev-engine/routes/sockets/view';
+export { default } from '@atomizedev/dev-engine/routes/sockets/view';
