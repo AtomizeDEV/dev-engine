@@ -14,7 +14,7 @@
         "ember-addon",
         "ember-engine"
     ],
-    "repository": "https://github.com/fleetbase/dev-engine",
+    "repository": "https://github.com/atomizedev/dev-engine",
     "license": "MIT",
     "author": "Fleetbase Pte Ltd <hello@fleetbase.io>",
     "directories": {
