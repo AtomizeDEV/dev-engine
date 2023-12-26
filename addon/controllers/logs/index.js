@@ -1,4 +1,4 @@
-import Controller from '@ember/controller';
+import BaseController from '../base-controller';
 import { tracked } from '@glimmer/tracking';
 import { inject as service } from '@ember/service';
 import { action } from '@ember/object';
@@ -8,7 +8,7 @@ import { task } from 'ember-concurrency-decorators';
 import fromStore from '@atomizedev/ember-core/decorators/from-store';
 import fetchFrom from '@atomizedev/ember-core/decorators/fetch-from';
 
-export default class LogsIndexController extends Controller {
+export default class LogsIndexController extends BaseController {
     /**
      * Inject the `filters` service
      *

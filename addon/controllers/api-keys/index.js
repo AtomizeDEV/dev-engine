@@ -5,6 +5,7 @@ import { action, computed } from '@ember/object';
 import { isBlank } from '@ember/utils';
 import { not } from '@ember/object/computed';
 import { timeout } from 'ember-concurrency';
+import { later } from '@ember/runloop';
 import { task } from 'ember-concurrency-decorators';
 import { format as formatDate } from 'date-fns';
 
@@ -64,6 +65,13 @@ export default class ApiKeysIndexController extends Controller {
      * @var {Service}
      */
     @service hostRouter;
+
+    /**
+     * Inject the `universe` service
+     *
+     * @var {Service}
+     */
+    @service universe;
 
     /**
      * Queryable parameters for this controller's model
@@ -448,7 +456,7 @@ export default class ApiKeysIndexController extends Controller {
      * @void
      */
     @action viewRequestLogs(apiKey) {
-        return this.transitionToRoute('logs.index', {
+        return this.universe.transitionToEngineRoute('@atomizedev/dev-engine', 'logs.index', {
             queryParams: { key: apiKey.id },
         });
     }
@@ -483,9 +491,13 @@ export default class ApiKeysIndexController extends Controller {
                         }
                     )
                     .then(() => {
-                        setTimeout(() => {
-                            return done();
-                        }, 600);
+                        later(
+                            this,
+                            () => {
+                                return done();
+                            },
+                            600
+                        );
                     })
                     .catch((error) => {
                         modal.stopLoading();
