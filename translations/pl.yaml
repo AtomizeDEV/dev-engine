@@ -1,0 +1,250 @@
+developers:
+  extension-name: Deweloperzy
+  common:
+    all: Wszystko
+    attempt: Próba
+    back: Powrót
+    bulk-action: Akcja zbiorcza
+    clear: Wyczyść
+    code: Kod
+    created: Utworzono
+    date: Data
+    description: Opis
+    email: Email
+    event-id: ID wydarzenia
+    event-type: Typ zdarzenia
+    event: Wydarzenie
+    export: Eksport
+    failed: Nieudane
+    id: ID
+    key: Klucz
+    mode: Tryb
+    name: Nazwa
+    new: Nowy
+    password: Hasło
+    result: Wynik
+    source: Źródło
+    status: Status
+    succeeded: Powiodło się
+    time: Czas
+    url: URL
+    version: Wersja
+
+  component:
+    api-event:
+      data:
+        title: Dane wydarzenia
+        no-data: Brak danych wydarzenia
+      details:
+        prefixTitle: Wydarzenie
+    api-request-log:
+      details:
+        prefixTitle: Żądanie
+        duration: Czas trwania
+        ip-address: Adres IP
+      query-params:
+        title: Parametry zapytania żądania
+        no-parameters: Brak parametrów zapytania
+      request-headers:
+        title: Nagłówki żądania
+        no-headers: Brak nagłówków żądania
+      request-body:
+        title: Ciało żądania
+        title-second-part: ciała
+        no-request-body: Brak ciała żądania {method}
+      response-body:
+        title: Ciało odpowiedzi
+        no-response-body: Brak ciała odpowiedzi
+    modals:
+      api-key-form:
+        api-name-aria-label: Nazwa klucza API
+        api-expiration-aria-label: Data wygaśnięcia klucza API
+        name-placeholder: Wprowadź pseudonim lub nazwę środowiska dla klucza API
+        expiration-label: Wygaśnięcie
+        expiration-help-text: Opcjonalnie ustaw datę wygaśnięcia dla tego klucza API.
+        select-expiration-date: Wybierz datę wygaśnięcia...
+        key-expires: Gdy ten klucz wygaśnie, nie można będzie wykonywać żadnych działań.
+        enter-domain-placeholder: Wprowadź domenę
+        allowed-browser-label: Dozwolone pochodzenia przeglądarki
+        allowed-browser-help-text: Wprowadź domeny, które będą dyktować politykę CORS dla żądań przeglądarki z tego klucza API.
+        test-key: Klucz testowy
+        testing-environments: Tworzysz klucz środowiska testowego, użyj tego do środowisk testowych.
+        live-key: Klucz na żywo
+        production-environments: Tworzysz klucz środowiska na żywo, użyj tego do środowisk produkcyjnych.
+      listen-custom-channel:
+        name: ID kanału wydarzenia
+        name-help-text: Wprowadź identyfikator kanału gniazda, na którym chcesz słuchać
+      rename-api-key-form:
+        api-key-label: Nazwa klucza API
+        api-key-placeholder: Wprowadź pseudonim lub nazwę środowiska dla klucza API
+      roll-api-key-form:
+        view-button-text: Zobacz logi
+        last-used: Ostatnio używany
+        expiration: Wygaśnięcie
+        api-key-expiration-label: Data wygaśnięcia klucza API
+        select-date: Wybierz datę wygaśnięcia...
+        key-expires: Gdy ten klucz wygaśnie, nie można będzie wykonywać żadnych działań.
+        additional-required: Wymagana dodatkowa autentykacja
+        enter-password: Aby kontynuować, wprowadź swoje hasło.
+        user-email: Email użytkownika
+        user-password: Hasło użytkownika
+        user-password-placeholder: Uwierzytelnij żądanie za pomocą swojego hasła
+      webhook-form:
+        endpoint-url: URL punktu końcowego
+        endpoint-url-help-text: URL, pod który Fastlane powinien wysyłać wywołania zwrotne zdarzeń.
+        endpoint-url-placeholder: https://
+        description-label: Opis
+        description-help-text: Opcjonalnie dodaj opis dla punktu końcowego webhooka.
+        description-aria-label: Opis webhooka
+        description-placeholder: Opcjonalny opis tego, do czego jest używany ten punkt końcowy webhooka.
+        api-credential-label: Poświadczenie API
+        api-credential-help-text: Ogranicz punkt końcowy webhooka, aby otrzymywać wywołania zwrotne od konkretnego klucza API.
+        api-credential-message: Odbieraj od wszystkich poświadczeń API...
+        api-credential-infoblock: Możesz wybrać konkretne poświadczenie API, które będzie używane do uruchamiania wywołań zwrotnych do tego punktu końcowego webhooka, lub możesz wybrać "Wszystkie poświadczenia API", a punkt końcowy webhooka będzie otrzymywać wywołania zwrotne niezależnie od używanego poświadczenia API.
+        version-help-text: Wybierz konkretną wersję API, aby otrzymywać wywołania zwrotne.
+        version-message: Wybierz wersję API...
+        events-send-label: Wydarzenia do wysłania
+        events-send-help-text: Wyraźnie ustaw, które wydarzenia chcesz otrzymywać wywołania zwrotne.
+        select-events: Wybierz wydarzenia...
+        event-search-label: Wyszukiwanie wydarzeń
+        event-search-placeholder: Szukaj...
+        no-selected: Nie wybrano wydarzeń
+        dropdown: Szukaj wydarzeń za pomocą rozwijanego menu powyżej, lub
+        all-events: odbierz wszystkie wydarzenia
+    webhook:
+      attempts:
+        copy-event-id: Skopiuj ID wydarzenia do schowka
+        view-event: Zobacz Wydarzenie
+        info-message: ID wydarzenia skopiowane do schowka.
+        webhook-header: Próby webhooka
+        webhook-message: Próby wysłania wydarzenia do twojego punktu końcowego w ciągu ostatnich 15 dni
+        http-code: Kod statusu HTTP
+        response-time: Czas odpowiedzi
+        request-endpoint: Żądanie do twojego punktu końcowego
+        no-request-body: Brak ciała żądania
+        response: Odpowiedź
+        no-response-body: Brak ciała odpowiedzi
+      details:
+        webhook-details: Szczegóły webhooka
+        update-details: Aktualizuj szczegóły...
+        event-types: Typy wydarzeń
+        help-text: Otrzymasz webhooki dla nowych typów wydarzeń, gdy zostaną dodane, z wyjątkiem tych, które wymagają wyraźnego wyboru. Słuchanie wszystkich typów wydarzeń zazwyczaj nie jest konieczne i może zwiększyć obciążenie twoich serwerów.
+        all-events: Wszystkie Wydarzenia
+        api-credential: Poświadczenie API
+        help-text-event: Otrzymasz wywołania zwrotne webhooków niezależnie od tego, jakie poświadczenie API jest używane do wywołania wydarzenia.
+        api-credentials: Odbieranie od wszystkich poświadczeń API
+      metrics:
+        date-created: Data utworzenia
+    widget:
+      api-metrics:
+        title: Monitorowanie
+        api-requests: Żądania API
+        api-error: Rozkład błędów API
+        webhooks: Webhooki
+        webhooks-response: Czas odpowiedzi webhooków
+        success-label: sukces
+        error-label: błąd
+        get-error: Błąd GET
+        post-error: Błąd POST
+        put-error: Błąd PUT
+        delete-error: Błąd DELETE
+        duration-ms: Czas trwania (ms)
+  api-keys:
+    index:
+      public-key: Klucz publiczny
+      secret-key: Klucz tajny
+      environment: Środowisko
+      expiry: Wygaśnięcie
+      last-used: Ostatnio używany
+      edit-key: Edytuj klucz...
+      roll-key: Odśwież klucz...
+      view-logs: Zobacz logi żądań...
+      delete-key: Usuń klucz...
+      new-api-key-title: Nowy klucz API
+      new-api-key-message: Utworzono nowe poświadczenia API.
+      edit-api-key-title: Edytuj klucz API
+      edit-api-key-message: Zapisano zmiany w poświadczeniach API.
+      rename-api-key-title: Zmień nazwę klucza API {apiKeyName}
+      untitled: Bez tytułu
+      rename-api-key-success-message: Poświadczenie API zmienione na {apiKeyName}
+      delete-api-key-title: Usuń klucz API {apiKeyName}
+      delete-api-key-body: Czy na pewno chcesz usunąć ten klucz API? Wszystkie twoje dane powiązane z tym kluczem API staną się nieosiągalne. Ta akcja nie może zostać cofnięta.
+      delete-api-key-success-message: Usunięto poświadczenie API {apiKeyName}.
+      delete-accept-button-text: Usuń poświadczenia API
+      roll-api-key: Odśwież klucz API {apiKeyName}
+      roll-api-key-button-text: Odśwież klucz API
+      roll-api-key-success-message: Odświeżono poświadczenie API {apiKeyName}.
+      roll-api-key-error-message: Nie można odświeżyć poświadczeń API.
+      export-api: Eksportuj poświadczenia API
+      export-api-accept-button-text: Pobierz
+      export-api-error-message: Nie można pobrać eksportu poświadczeń API.
+      title: Klucze API
+      label: Zobacz dane testowe
+      help-text: Przełączenie widoku danych testowych umożliwi konsoli wyświetlanie wszystkich danych testowych z twojego środowiska piaskownicy
+      select-api-key-aria-label: Wybierz klucz API
+      select-key: Wybierz konkretny klucz
+      test-data: Wszystkie dane testowe...
+      delete-api: Usuń poświadczenia API
+  events:
+    index:
+      title: Wydarzenia
+  logs:
+    index:
+      api-credential: Poświadczenie API
+      http-method: Metoda HTTP
+      title: Logi
+  sockets:
+    index:
+      link-text: Obserwuj kanał
+      channel: Kanał
+      listen-channel-title: Słuchaj na niestandardowym kanale
+      listen-channel-button-text: Słuchaj
+      title: Kanały odbierające wydarzenia z twojego konta
+      button-text: Słuchaj na niestandardowym kanale
+    view:
+      socket-connection-error: Błąd połączenia socket!
+      socket-connected: Socket jest połączony
+      socket-subscribed: Socket subskrybowany do kanału {modelName}
+      output: Wyjście
+      awaiting-events: Oczekiwanie na wydarzenia...
+  webhooks:
+    index:
+      view-logs: Zobacz Logi
+      edit-webhook: Edytuj Webhook
+      delete-webhook: Usuń Webhook
+      add-webhook: Dodaj punkt końcowy webhooka
+      add-webhook-button-text: Potwierdź & Utwórz
+      edit-webhook-endpoint: Edytuj punkt końcowy webhooka
+      edit-webhook-endpoint-button-text: Zapisz zmiany
+      new-webhook-success-message: Utworzono nowy Webhook.
+      delete-webhook-endpoint: Usuń ten punkt końcowy Webhooka
+      delete-webhook-endpoint-body: Czy na pewno chcesz usunąć ten Webhook? Wszystkie twoje dane powiązane z tym Webhookiem staną się nieosiągalne. Ten punkt końcowy przestanie również odbierać przyszłe wydarzenia. Ta akcja nie może zostać cofnięta.
+      delete-webhook-success-message: Usunięto punkt końcowy Webhooka.
+      title: Webhooki
+      button-text: Dodaj nowy punkt końcowy
+    view:
+      webhook-deleted-success-message: Usunięto punkt końcowy Webhooka.
+      disable-webhook-title: Wyłącz punkt końcowy webhooka
+      disable-webhook-body: Ten punkt końcowy webhooka może być tymczasowo wyłączony, tak że nie będzie otrzymywał powiadomień do czasu jego ponownego włączenia. Fastlane nie będzie ponawiać żadnych powiadomień wygenerowanych podczas gdy punkt końcowy jest wyłączony.
+      disable-webhook-button-text: Wyłącz punkt końcowy webhooka
+      disable-webhook-success-message: Webhook wyłączony.
+      enable-webhook-title: Włącz punkt końcowy webhooka
+      enable-webhook-body: Ten webhook jest wyłączony i nie otrzymuje już powiadomień. Mogło to zostać zrobione automatycznie, ponieważ wykryliśmy przedłużający się okres awarii. Jeśli naprawiłeś problem, możesz ponownie włączyć punkt końcowy webhooka tutaj. Fastlane nie będzie ponawiać żadnych powiadomień wygenerowanych w międzyczasie, i jeśli będziemy nadal wykrywać awarie na tym punkcie końcowym, wyłączymy punkt końcowy ponownie.
+      enable-webhook-button-text: Włącz punkt końcowy webhooka
+      enable-webhook-success-message: Webhook włączony.
+      update-endpoint-button-text: Aktualizuj punkt końcowy
+      update-endpoint-success-message: Zaktualizowano szczegóły Webhooka.
+      send-button-text: Wyślij testowy webhook...
+      disable-button-text: Wyłącz...
+      enable-button-text: Włącz...
+      delete-button-text: Usuń...
+application:
+  sidebar:
+    title: Konsola Deweloperska
+    items:
+      home: Panel główny
+      api-keys: Klucze API
+      webhooks: Webhooki
+      websockets: WebSockets
+      logs: Logi
+      events: Wydarzenia

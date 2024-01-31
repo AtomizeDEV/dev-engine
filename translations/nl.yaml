@@ -1,0 +1,250 @@
+developers:
+  extension-name: Ontwikkelaars
+  common:
+    all: Alle
+    attempt: Poging
+    back: Terug
+    bulk-action: Bulkactie
+    clear: Wissen
+    code: Code
+    created: Gemaakt
+    date: Datum
+    description: Beschrijving
+    email: E-mail
+    event-id: Evenement-ID
+    event-type: Evenementtype
+    event: Evenement
+    export: Exporteren
+    failed: Mislukt
+    id: ID
+    key: Sleutel
+    mode: Modus
+    name: Naam
+    new: Nieuw
+    password: Wachtwoord
+    result: Resultaat
+    source: Bron
+    status: Status
+    succeeded: Geslaagd
+    time: Tijd
+    url: URL
+    version: Versie
+
+  component:
+    api-event:
+      data:
+        title: Evenementgegevens
+        no-data: Geen evenementgegevens
+      details:
+        prefixTitle: Evenement
+    api-request-log:
+      details:
+        prefixTitle: Verzoek
+        duration: Duur
+        ip-address: IP-adres
+      query-params:
+        title: Verzoek queryparameters
+        no-parameters: Geen queryparameters
+      request-headers:
+        title: Verzoekheaders
+        no-headers: Geen verzoekheaders
+      request-body:
+        title: Verzoek
+        title-second-part: body
+        no-request-body: Geen verzoek {method} body
+      response-body:
+        title: Antwoordbody
+        no-response-body: Geen antwoordbody
+    modals:
+      api-key-form:
+        api-name-aria-label: API-sleutelnaam
+        api-expiration-aria-label: API-sleutel vervaldatum
+        name-placeholder: Voer een bijnaam of omgevingsnaam in voor API-sleutel
+        expiration-label: Vervaldatum
+        expiration-help-text: Optioneel een vervaldatum voor deze api-sleutel instellen.
+        select-expiration-date: Selecteer een vervaldatum...
+        key-expires: Zodra deze sleutel verloopt, kun je geen acties meer uitvoeren ermee.
+        enter-domain-placeholder: Voer domein in
+        allowed-browser-label: Toegestane Browser Origins
+        allowed-browser-help-text: Voer domeinen in die het CORS-beleid voor browserverzoeken vanaf deze api-sleutel zullen dicteren.
+        test-key: Test Sleutel
+        testing-environments: Je maakt een testsleutel voor omgevingen, gebruik dit voor testomgevingen.
+        live-key: Live Sleutel
+        production-environments: Je maakt een live omgevingssleutel, gebruik dit voor productieomgevingen.
+      listen-custom-channel:
+        name: Evenementkanaal ID
+        name-help-text: Voer de socketkanaalidentificatie in waarop je wilt luisteren
+      rename-api-key-form:
+        api-key-label: API-sleutelnaam
+        api-key-placeholder: Voer een bijnaam of omgevingsnaam in voor API-sleutel
+      roll-api-key-form:
+        view-button-text: Bekijk logs
+        last-used: Laatst gebruikt
+        expiration: Vervaldatum
+        api-key-expiration-label: API-sleutel Vervaldatum
+        select-date: Selecteer een vervaldatum...
+        key-expires: Zodra deze sleutel verloopt, kun je geen acties meer uitvoeren ermee.
+        additional-required: Extra authenticatie vereist
+        enter-password: Om door te gaan, voer je wachtwoord in.
+        user-email: Gebruikerse-mail
+        user-password: Gebruikerswachtwoord
+        user-password-placeholder: Authenticeer verzoek met je wachtwoord
+      webhook-form:
+        endpoint-url: Endpoint-URL
+        endpoint-url-help-text: De URL waar Fastlane evenementcallbacks naartoe moet sturen.
+        endpoint-url-placeholder: https://
+        description-label: Beschrijving
+        description-help-text: Optioneel een beschrijving toevoegen voor het webhook-eindpunt.
+        description-aria-label: Webhookbeschrijving
+        description-placeholder: Een optionele beschrijving van waar dit webhook-eindpunt voor wordt gebruikt.
+        api-credential-label: API-referentie
+        api-credential-help-text: Beperk het webhook-eindpunt om callbacks te ontvangen van een specifieke API-sleutel.
+        api-credential-message: Ontvang van alle API-referenties...
+        api-credential-infoblock: Je kunt een specifieke API-referentie selecteren die wordt gebruikt om callbacks naar dit webhook-eindpunt te activeren, of je kunt "Alle API-referenties" selecteren, en het webhook-eindpunt ontvangt callbacks ongeacht de gebruikte API-referentie.
+        version-help-text: Selecteer een specifieke API-versie om callbacks voor te ontvangen.
+        version-message: Selecteer een API-versie...
+        events-send-label: Evenementen om te versturen
+        events-send-help-text: Stel expliciet in welke evenementen je callbacks voor wilt ontvangen.
+        select-events: Selecteer evenementen...
+        event-search-label: Evenementen zoeken
+        event-search-placeholder: Zoeken...
+        no-selected: Geen evenementen geselecteerd
+        dropdown: Zoek naar evenementen met de dropdown hierboven, of
+        all-events: ontvang alle evenementen
+    webhook:
+      attempts:
+        copy-event-id: Kopieer evenement-ID naar klembord
+        view-event: Bekijk Evenement
+        info-message: Evenement-ID gekopieerd naar klembord.
+        webhook-header: Webhookpogingen
+        webhook-message: Pogingen om een evenement naar je eindpunt te sturen in de afgelopen 15 dagen
+        http-code: HTTP-statuscode
+        response-time: Antwoordtijd
+        request-endpoint: Verzoek naar je eindpunt
+        no-request-body: Geen verzoekbody
+        response: Antwoord
+        no-response-body: Geen antwoordbody
+      details:
+        webhook-details: Webhookdetails
+        update-details: Werk details bij...
+        event-types: Evenementtypen
+        help-text: Je ontvangt webhooks voor nieuwe evenementtypen zodra ze worden toegevoegd, behalve voor die welke expliciete selectie vereisen. Luisteren naar alle evenementtypen is meestal niet nodig en kan de belasting op je servers verhogen.
+        all-events: Alle Evenementen
+        api-credential: API-referentie
+        help-text-event: Je ontvangt webhookcallbacks ongeacht welke API-referentie wordt gebruikt om het evenement te activeren.
+        api-credentials: Ontvangen van alle API-referenties
+      metrics:
+        date-created: Datum Gemaakt
+    widget:
+      api-metrics:
+        title: Monitoring
+        api-requests: API-verzoeken
+        api-error: API-foutverdeling
+        webhooks: Webhooks
+        webhooks-response: Webhooks reactietijd
+        success-label: succes
+        error-label: fout
+        get-error: GET-fout
+        post-error: POST-fout
+        put-error: PUT-fout
+        delete-error: DELETE-fout
+        duration-ms: Duur (ms)
+  api-keys:
+    index:
+      public-key: Openbare Sleutel
+      secret-key: Geheime Sleutel
+      environment: Omgeving
+      expiry: Vervaldatum
+      last-used: Laatst Gebruikt
+      edit-key: Bewerk sleutel...
+      roll-key: Rol sleutel...
+      view-logs: Bekijk verzoeklogs...
+      delete-key: Verwijder sleutel...
+      new-api-key-title: Nieuwe API-sleutel
+      new-api-key-message: Nieuwe API-referenties gemaakt.
+      edit-api-key-title: Bewerk API-sleutel
+      edit-api-key-message: Wijzigingen in API-referenties opgeslagen.
+      rename-api-key-title: Hernoem {apiKeyName} API-sleutel
+      untitled: Zonder titel
+      rename-api-key-success-message: API-referentie hernoemd naar {apiKeyName}
+      delete-api-key-title: Verwijder {apiKeyName} API-sleutel
+      delete-api-key-body: Weet je zeker dat je deze API-sleutel wilt verwijderen? Al je gegevens geassocieerd met deze API-sleutel worden onbereikbaar. Deze actie kan niet ongedaan worden gemaakt.
+      delete-api-key-success-message: API-referentie {apiKeyName} verwijderd.
+      delete-accept-button-text: Verwijder API-referenties
+      roll-api-key: Rol {apiKeyName} API-sleutel
+      roll-api-key-button-text: Rol API-sleutel
+      roll-api-key-success-message: API-referentie {apiKeyName} gerold.
+      roll-api-key-error-message: Kan API-referenties niet rollen.
+      export-api: Exporteer API-referenties
+      export-api-accept-button-text: Download
+      export-api-error-message: Kan export van API-referenties niet downloaden.
+      title: API-sleutels
+      label: Bekijk testgegevens
+      help-text: Het schakelen van testgegevens bekijken zal de console in staat stellen om alle testgegevens van je sandbox-omgeving weer te geven
+      select-api-key-aria-label: Selecteer API-sleutel
+      select-key: Selecteer specifieke sleutel
+      test-data: Alle testgegevens...
+      delete-api: Verwijder API-referenties
+  events:
+    index:
+      title: Evenementen
+  logs:
+    index:
+      api-credential: API-referentie
+      http-method: HTTP-methode
+      title: Logs
+  sockets:
+    index:
+      link-text: Volg kanaal
+      channel: Kanaal
+      listen-channel-title: Luister op een aangepast kanaal
+      listen-channel-button-text: Luister
+      title: Kanalen die evenementen ontvangen van je account
+      button-text: Luister op aangepast kanaal
+    view:
+      socket-connection-error: Socketverbinding fout!
+      socket-connected: Socket is verbonden
+      socket-subscribed: Socket geabonneerd op kanaal {modelName}
+      output: Uitvoer
+      awaiting-events: Wachtend op evenementen...
+  webhooks:
+    index:
+      view-logs: Bekijk Logs
+      edit-webhook: Bewerk Webhook
+      delete-webhook: Verwijder Webhook
+      add-webhook: Voeg een webhook-eindpunt toe
+      add-webhook-button-text: Bevestig & Maak
+      edit-webhook-endpoint: Bewerk webhook-eindpunt
+      edit-webhook-endpoint-button-text: Wijzigingen opslaan
+      new-webhook-success-message: Nieuwe Webhook gemaakt.
+      delete-webhook-endpoint: Verwijder dit Webhook-eindpunt
+      delete-webhook-endpoint-body: Weet je zeker dat je deze Webhook wilt verwijderen? Al je gegevens geassocieerd met deze Webhook worden onbereikbaar. Dit eindpunt zal ook stoppen met het ontvangen van toekomstige evenementen. Deze actie kan niet ongedaan worden gemaakt.
+      delete-webhook-success-message: Webhook-eindpunt verwijderd.
+      title: Webhooks
+      button-text: Voeg nieuw eindpunt toe
+    view:
+      webhook-deleted-success-message: Webhook-eindpunt verwijderd.
+      disable-webhook-title: Schakel een webhook-eindpunt uit
+      disable-webhook-body: Dit webhook-eindpunt kan tijdelijk worden uitgeschakeld, zodat het geen meldingen ontvangt totdat het weer wordt ingeschakeld. Fastlane zal geen meldingen opnieuw proberen die worden gegenereerd terwijl het eindpunt is uitgeschakeld.
+      disable-webhook-button-text: Schakel webhook-eindpunt uit
+      disable-webhook-success-message: Webhook uitgeschakeld.
+      enable-webhook-title: Schakel een webhook-eindpunt in
+      enable-webhook-body: Deze webhook is uitgeschakeld en ontvangt geen meldingen meer. Dit kan automatisch zijn gedaan omdat we een langere periode van storingen hebben gedetecteerd. Als je het probleem hebt opgelost, kun je het webhook-eindpunt hier opnieuw inschakelen. Fastlane zal geen meldingen opnieuw proberen die in de tussentijd zijn gegenereerd, en als we doorgaan met het detecteren van storingen op dit eindpunt, zullen we het eindpunt opnieuw uitschakelen.
+      enable-webhook-button-text: Schakel webhook-eindpunt in
+      enable-webhook-success-message: Webhook ingeschakeld.
+      update-endpoint-button-text: Werk eindpunt bij
+      update-endpoint-success-message: Webhookdetails bijgewerkt.
+      send-button-text: Stuur test webhook...
+      disable-button-text: Uitschakelen...
+      enable-button-text: Inschakelen...
+      delete-button-text: Verwijderen...
+application:
+  sidebar:
+    title: Ontwikkelaarsconsole
+    items:
+      home: Dashboard
+      api-keys: API-sleutels
+      webhooks: Webhooks
+      websockets: WebSockets
+      logs: Logs
+      events: Evenementen
